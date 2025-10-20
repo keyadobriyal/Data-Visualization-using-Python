@@ -70,8 +70,8 @@ Choosing the right visualization depends on the objective and nature of the data
 | Plot Type | Matplotlib Function | Purpose |
 | --- | --- | --- |
 | Relationship | plt.scatter() | Show correlation or cluster separation (e.g., Iris data).
-| Distribution | plt.hist() \ plt.boxplot() \ sns.violinplot() | Show the frequency, spread, and central tendency of a single variable.|
-| Comparison | plt.bar() \ plt.plot() | Compare quantities across different categories or track trends over time.|
+| Distribution | plt.hist()\ plt.boxplot()\ sns.violinplot() | Show the frequency, spread, and central tendency of a single variable.|
+| Comparison | plt.bar()\ plt.plot() | Compare quantities across different categories or track trends over time.|
 
 ```
 plt.scatter(data['x'], data['y'])
@@ -124,3 +124,4 @@ Plots can be exported in multiple formats for reports or dashboards:
 plt.savefig('visualization.png', dpi=300, bbox_inches='tight')
 ```
 
+Included with the repository is Visualization of Iris dataset using Matplotlib. 
