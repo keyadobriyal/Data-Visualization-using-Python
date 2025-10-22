@@ -41,7 +41,8 @@ This phase is where the approaches diverge. Matplotlib requires more steps to bu
 
 ***Phase 3: Refinement and Communication***
 This final phase relies heavily on Matplotlib's foundational layer for fine-tuning.
-| Step | Purpose| Matplotlib/Seaborn Tool |
+| Step | Purpose | Matplotlib/Seaborn Tool |
+| --- | --- | --- |
 | Labeling | Add titles, axis labels, and legends. | plt.title(), ax.set_xlabel(), ax.legend() |
 |Aesthetics | Adjust colors, line styles, and grids. | Matplotlib commands (ax.grid(), ax.tick_params()) or Seaborn color palettes (palette=...). |
 | Clarity | Prevent overlapping elements. | plt.tight_layout() |
