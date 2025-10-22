@@ -148,4 +148,4 @@ Plots can be exported in multiple formats for reports or dashboards:
 plt.savefig('visualization.png', dpi=300, bbox_inches='tight')
 ```
 
-Included with the repository is Visualization of Iris dataset using Matplotlib. 
+Included with the repository is Visualization jupyter notebook, jupyter notebook with output and python code of Iris dataset using Matplotlib. 
