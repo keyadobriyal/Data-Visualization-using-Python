@@ -52,7 +52,7 @@ This final phase relies heavily on Matplotlib's foundational layer for fine-tuni
 ## Steps for data visualization
 Following Steps are essential in data visualization using python
 
-### 1. Importing Required Libraries
+## 1. Importing Required Libraries
 The process begins by importing the Matplotlib library, usually its pyplot module, which offers a MATLAB-like interface for plotting:
 ```
 import matplotlib.pyplot as plt
@@ -63,7 +63,7 @@ Visualization in a Jupyter Notebook: Matplotlib magic command ensures inline ren
 %matplotlib inline
 ```
 
-### 2. Loading and Inspecting Data
+2. Loading and Inspecting Data
 Data can be imported from sources such as CSV, Excel, or SQL databases using libraries like pandas:
 ```
 import pandas as pd
@@ -100,7 +100,7 @@ Uniqueness and Specific Values
 | df['column_name'].nunique() | Returns the count of unique values in a specific column. |
 | df['column_name'].value_counts() | Returns a Series showing the frequency of each unique value, ordered from most to least frequent. Excellent for checking class imbalance in target variables. |
 
-### 3. Selecting the Appropriate visualization charts depends on your objective, data type, and relationship you want to highlight.
+3. Selecting the Appropriate visualization charts depends on your objective, data type, and relationship you want to highlight.
 
 | Visualization Type	| Description |	Typical Use Case |
 | --- | --- | --- |
@@ -131,7 +131,7 @@ plt.ylabel('Y Variable')
 plt.show()
 ```
 
-### 4. Customizing the Visualization
+4. Customizing the Visualization
 
 Matplotlib allows customization of almost every visual element to improve readability:
 
@@ -152,7 +152,7 @@ plt.grid(True)
 plt.show()
 ```
 
-### 5. Combining Multiple Plots
+5. Combining Multiple Plots
 
 Subplots help compare multiple visualizations side by side for deeper analysis:
 
@@ -163,11 +163,11 @@ ax[1].boxplot(data['Revenue'])
 plt.show()
 ```
 
-### 6. Interpreting and Communicating Insights
+6. Interpreting and Communicating Insights
 
 The final step involves interpreting patterns, anomalies, and relationships revealed by the plots. Clear labeling, color consistency, and concise legends help communicate insights effectively.
 
-### 7. Saving and Sharing Visualizations
+7. Saving and Sharing Visualizations
 
 Plots can be exported in multiple formats for reports or dashboards:
 ```
