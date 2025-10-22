@@ -18,12 +18,13 @@ This phase is where the approaches diverge. Matplotlib requires more steps to bu
 
 Phase 3: Refinement and Communication
 This final phase relies heavily on Matplotlib's foundational layer for fine-tuning.
-| Step | Purpose| Matplotlib/Seaborn ToolLabelingAdd titles, axis labels, and legends.plt.title(), ax.set_xlabel(), ax.legend()AestheticsAdjust colors, line styles, and grids.Matplotlib commands (ax.grid(), ax.tick_params()) or Seaborn color palettes (palette=...).ClarityUse plt.tight_layout() to prevent overlapping elements.plt.tight_layout()SavingFinalize the image for presentation.plt.savefig('output.png', dpi=300)
-Methodology for Data Visualization Using Matplotlib  Data visualization is a crucial step in data analysis, enabling better understanding, pattern recognition, and insight generation. Matplotlib, a powerful Python library, provides a flexible framework for creating static, animated, and interactive visualizations.
-Data visualization using Matplotlib follows a structured methodology that encompasses data preparation, iterative plotting, and final refinement to effectively communicate insights.
+| Step | Purpose| Matplotlib/Seaborn Tool |
+| Labeling | Add titles, axis labels, and legends. | plt.title(), ax.set_xlabel(), ax.legend() |
+|Aesthetics | Adjust colors, line styles, and grids. | Matplotlib commands (ax.grid(), ax.tick_params()) or Seaborn color palettes (palette=...). |
+| Clarity | Prevent overlapping elements. | plt.tight_layout() |
+| Saving | Finalize the image for presentation. | plt.savefig('output.png', dpi=300) |
 
-The methodology for visualizing data using Matplotlibis typically divided into three main phases: Preparation, Visualization, and Refinement.
-It typically follows these steps:
+Following Steps are essential in data visualization using python
 
 1. Importing Required Libraries
 The process begins by importing the Matplotlib library, usually its pyplot module, which offers a MATLAB-like interface for plotting:
@@ -73,19 +74,22 @@ Uniqueness and Specific Values
 | df['column_name'].nunique() | Returns the count of unique values in a specific column. |
 | df['column_name'].value_counts() | Returns a Series showing the frequency of each unique value, ordered from most to least frequent. Excellent for checking class imbalance in target variables. |
 
-3. Selecting the Appropriate Plot Type
+3. Selecting the Appropriate visualization charts depends on your objective, data type, and relationship you want to highlight.
 
-Choosing the right visualization depends on the objective and nature of the data:
+| Visualization Type	| Description |	Typical Use Case |
+| --- | --- | --- |
+| Line Plot	| Displays data trends or changes over a continuous interval or time period.	| Tracking metrics over time (e.g., production, temperature). |
+| Bar Chart	| Represents categorical data with rectangular bars proportional to their values. |	Comparing quantities across different categories. |
+| Histogram	| Shows the frequency distribution of numerical data divided into bins. |	Understanding distribution and skewness of continuous variables. |
+| Pie Diagram	| Circular chart divided into slices to illustrate numerical proportions.	| Showing parts of a whole (e.g., market share). |
+| Donut Diagram	| Similar to a pie chart but with a central hole, enhancing readability. |	Emphasizing proportions while allowing space for central labels. |
+| Scatter Plot	| Displays relationship between two numerical variables using dots.	| Detecting correlation or clustering patterns. |
+| Box Plot	| Summarizes distribution using median, quartiles, and potential outliers.	| Comparing spread and detecting outliers across groups. |
+| Violin Plot	| Combines box plot with a density plot to show data distribution and spread.	| Understanding both summary statistics and data distribution shape. |
+| Bubble Plot	| Extension of scatter plot where bubble size represents an additional variable.	| Visualizing three variables simultaneously (x, y, and bubble size). |
+| Radar Plot (Spider Chart)	| Plots multiple quantitative variables on axes starting from a common center.	| Comparing feature profiles across categories (e.g., species characteristics). |
+| Correlation Heatmap	| Visualizes pairwise correlation coefficients between variables using color gradients. |	Identifying strength and direction of relationships between variables. |
 
-***Line Plot:*** For trends over time.
-
-***Bar Chart:*** For comparing categorical values.
-
-***Histogram:*** For distribution of numerical data.
-
-***Scatter Plot:*** For examining relationships between variables.
-
-***Box Plot:*** For detecting outliers and spread.
 
 | Plot Type | Matplotlib Function | Purpose |
 | --- | --- | --- |
