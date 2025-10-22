@@ -1,22 +1,45 @@
 # Data-Visualization-using-Python
 
-Methodology for Data VisualizationMatplotlib and Seaborn are the premier Python tools for data visualization, a crucial process that drives insight, pattern recognition, and deeper understanding in data analysis. While both follow a three-phase methodology, their implementation differs.
+##Dataset
+I have choosen dataset of Iris and is perhaps the best known database to be found in the pattern recognition literature. Fisher's paper is a classic in the field and is referenced frequently to this day. (See Duda & Hart, for example.) 
 
-Phase 1: Data Preparation and Understanding
+The dataset features three classes of Iris plants with 50 examples per class. Crucially for classification studies, it presents a challenge where one flower type can be easily distinguished from the rest two using a straight line, but the remaining two classes exhibit significant overlap and cannot be separated linearly.
+
+This inherent challenge necessitates a deep understanding of Python's visualization capabilities, transforming their effective use into a fundamental requirement for mastering data analysis and thus becomes a cornerstone in gaining expertise to tackle such complex, real-world classification problems.
+
+##Attribute Information:
+- sepal length in cm
+- sepal width in cm
+- petal length in cm
+- petal width in cm
+- class: -- Iris Setosa -- Iris Versicolour -- Iris Virginica
+
+##Python Libraries
+We will use five libraries for the tutorial:
+- pandas: Data Loading, Cleaning, and Manipulation.
+- matplotlib: The Visualization Foundation and Customization Engine.
+- sklearn: Data Sourcing and Machine Learning Utilities.
+- numpy: Numerical Computing and Array Operations.
+- seaborn: High-Level Statistical Data Visualization.
+##Methodology for Data Visualization
+
+Matplotlib and Seaborn are the premier Python tools for data visualization, a crucial process that drives insight, pattern recognition, and deeper understanding in data analysis. While both follow a three-phase methodology, their implementation differs.
+
+***Phase 1: Data Preparation and Understanding***
 
 This initial phase is identical for both libraries and is necessary to ensure data quality and clarity.
 Define the Goal: What specific relationships or distributions are you trying to communicate?
 Load and Inspect Data (Pandas): Use df.head(), df.info(), and df.describe() to check structure, data types, and potential issues (like missing values).
 Data Transformation: Aggregate, filter, or clean the data to prepare it for the specific chart type (e.g., calculating means for a Bar/Radar chart).
 
-Phase 2: Visualization and Exploration
+***Phase 2: Visualization and Exploration***
 This phase is where the approaches diverge. Matplotlib requires more steps to build the visual elements, while Seaborn handles most of the statistical mapping internally.
 | Library | Primary Focus | Typical Syntax | Key Methodology |
 | --- | --- | --- | --- |
 | Matplotlib | Flexibility and Customization | ax.plot(), ax.scatter() | Explicit Plotting: You manually map data arrays (X, Y) to visual elements (color, marker) on a manually created axes object. |
 | Seaborn | Statistical Graphics & Aesthetics | sns.scatterplot(), sns.histplot() | Declarative Mapping: You tell Seaborn the DataFrame (data=df), the variable for the x-axis (x='feature'), and the grouping variable (hue='category'). Seaborn handles aggregation and styling automatically. |
 
-Phase 3: Refinement and Communication
+***Phase 3: Refinement and Communication***
 This final phase relies heavily on Matplotlib's foundational layer for fine-tuning.
 | Step | Purpose| Matplotlib/Seaborn Tool |
 | Labeling | Add titles, axis labels, and legends. | plt.title(), ax.set_xlabel(), ax.legend() |
