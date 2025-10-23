@@ -105,13 +105,22 @@ Uniqueness and Specific Values
 | Visualization Type	| Description |	Typical Use Case |
 | --- | --- | --- |
 | Line Plot	| Displays data trends or changes over a continuous interval or time period.	| Tracking metrics over time (e.g., production, temperature). |
-| Bar Chart	| Represents categorical data with rectangular bars proportional to their values. |	Comparing quantities across different categories. |
+| Bar Plot	| Represents categorical data with rectangular bars proportional to their values. |	Comparing quantities across different categories. |
+| Count Plot | Similar to a bar plot but automatically counts the occurrences of categorical variables. | Showing the frequency distribution of categorical features. |
 | Histogram	| Shows the frequency distribution of numerical data divided into bins. |	Understanding distribution and skewness of continuous variables. |
+| Density Plot | Smooth version of a histogram that estimates the probability density function of continuous data. | Visualizing data distribution and comparing multiple distributions. |
 | Pie Diagram	| Circular chart divided into slices to illustrate numerical proportions.	| Showing parts of a whole (e.g., market share). |
 | Donut Diagram	| Similar to a pie chart but with a central hole, enhancing readability. |	Emphasizing proportions while allowing space for central labels. |
 | Scatter Plot	| Displays relationship between two numerical variables using dots.	| Detecting correlation or clustering patterns. |
+| Pair Plot | Plots pairwise relationships between all numerical features in the dataset. | Quick multivariate analysis and correlation detection. |
+| Facet Grid Plot | Creates a grid of subplots based on combinations of categorical variables. | Comparing distributions or relationships across multiple subsets of data. |
+| Joint Plot | Combines a scatter plot with histograms or density plots for both axes. | Analyzing relationships between two variables with marginal distributions. |
+| Regression Plot | Displays scatter data along with a fitted regression line. | Evaluating linear relationships and trends between variables. |
+| 3D Scatter Plot | Extends scatter plot to three dimensions using x, y, and z axes. | Visualizing spatial relationships or high-dimensional data patterns. |
 | Box Plot	| Summarizes distribution using median, quartiles, and potential outliers.	| Comparing spread and detecting outliers across groups. |
 | Violin Plot	| Combines box plot with a density plot to show data distribution and spread.	| Understanding both summary statistics and data distribution shape. |
+| Swarm Plot | Displays individual data points along a categorical axis with minimal overlap. | Showing all observations in a categorical variable while maintaining clarity. |
+| Strip Plot | Similar to a swarm plot but allows overlapping of data points. | Visualizing raw data distribution for small datasets. |
 | Bubble Plot	| Extension of scatter plot where bubble size represents an additional variable.	| Visualizing three variables simultaneously (x, y, and bubble size). |
 | Radar Plot (Spider Chart)	| Plots multiple quantitative variables on axes starting from a common center.	| Comparing feature profiles across categories (e.g., species characteristics). |
 | Correlation Heatmap	| Visualizes pairwise correlation coefficients between variables using color gradients. |	Identifying strength and direction of relationships between variables. |
